@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficticio Abogados | Firma Legal en Ecuador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo-container">
+                <h1 class="header__logo">Ficticio Abogados</h1>
+            </div>
+            <button class="header__menu-toggle" aria-label="Abrir menú">
+                <span class="header__menu-icon"></span>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#inicio" class="header__nav-link header__nav-link--active">Inicio</a></li>
+                    <li class="header__nav-item"><a href="#sobre-nosotros" class="header__nav-link">Sobre Nosotros</a></li>
+                    <li class="header__nav-item header__nav-item--has-dropdown">
+                        <a href="#especialidades" class="header__nav-link">Especialidades</a>
+                        <ul class="header__dropdown">
+                            <li class="header__dropdown-item"><a href="#penal" class="header__dropdown-link">Derecho Penal</a></li>
+                            <li class="header__dropdown-item"><a href="#constitucional" class="header__dropdown-link">Derecho Constitucional</a></li>
+                            <li class="header__dropdown-item"><a href="#laboral" class="header__dropdown-link">Derecho Laboral</a></li>
+                            <li class="header__dropdown-item"><a href="#civil" class="header__dropdown-link">Derecho Civil</a></li>
+                            <li class="header__dropdown-item"><a href="#mercantil" class="header__dropdown-link">Derecho Mercantil</a></li>
+                            <li class="header__dropdown-item"><a href="#administrativo" class="header__dropdown-link">Derecho Administrativo</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item"><a href="#equipo" class="header__nav-link">Equipo</a></li>
+                    <li class="header__nav-item"><a href="#blog" class="header__nav-link">Blog</a></li>
+                    <li class="header__nav-item"><a href="#contacto" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h2 class="hero__title">Excelencia Legal a su Servicio</h2>
+                <p class="hero__subtitle">Comprometidos con la justicia y el éxito de nuestros clientes</p>
+                <a href="#contacto" class="hero__cta">Consulta Gratuita</a>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section class="about" id="sobre-nosotros">
+            <div class="container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__paragraph">Ficticio Abogados es una firma legal líder en Ecuador con más de 20 años de experiencia brindando asesoría jurídica de excelencia. Nuestro compromiso es ofrecer soluciones legales efectivas y personalizadas para cada cliente.</p>
+                        <p class="about__paragraph">Nos distinguimos por nuestro profundo conocimiento del sistema legal ecuatoriano y nuestra dedicación a la defensa de los intereses de nuestros clientes con los más altos estándares éticos y profesionales.</p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number">20+</span>
+                            <span class="about__stat-text">Años de Experiencia</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">500+</span>
+                            <span class="about__stat-text">Casos Exitosos</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">15</span>
+                            <span class="about__stat-text">Abogados Especializados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades -->
+        <section class="specialties" id="especialidades">
+            <div class="container">
+                <h2 class="section-title">Nuestras Especialidades</h2>
+                <div class="specialties__grid">
+                    <div class="specialty" id="penal">
+                        <div class="specialty__icon">⚖️</div>
+                        <h3 class="specialty__title">Derecho Penal</h3>
+                        <p class="specialty__description">Defensa en procesos penales, representación ante fiscalías y tribunales, y asesoría en delitos económicos, contra la propiedad y contra las personas.</p>
+                    </div>
+                    <div class="specialty" id="constitucional">
+                        <div class="specialty__icon">📜</div>
+                        <h3 class="specialty__title">Derecho Constitucional</h3>
+                        <p class="specialty__description">Acciones de protección, habeas corpus, acceso a la información pública y defensa de derechos fundamentales garantizados por la Constitución.</p>
+                    </div>
+                    <div class="specialty" id="laboral">
+                        <div class="specialty__icon">👷</div>
+                        <h3 class="specialty__title">Derecho Laboral</h3>
+                        <p class="specialty__description">Asesoría en contratación, despidos, indemnizaciones, seguridad social, y representación en conflictos laborales individuales y colectivos.</p>
+                    </div>
+                    <div class="specialty" id="civil">
+                        <div class="specialty__icon">🏛️</div>
+                        <h3 class="specialty__title">Derecho Civil</h3>
+                        <p class="specialty__description">Contratos, obligaciones, responsabilidad civil, sucesiones, propiedad y derechos reales, y procedimientos civiles.</p>
+                    </div>
+                    <div class="specialty" id="mercantil">
+                        <div class="specialty__icon">💼</div>
+                        <h3 class="specialty__title">Derecho Mercantil</h3>
+                        <p class="specialty__description">Constitución de sociedades, contratos mercantiles, propiedad intelectual, competencia desleal y asesoría empresarial integral.</p>
+                    </div>
+                    <div class="specialty" id="administrativo">
+                        <div class="specialty__icon">🏢</div>
+                        <h3 class="specialty__title">Derecho Administrativo</h3>
+                        <p class="specialty__description">Procedimientos administrativos, contratación pública, recursos administrativos y representación ante entidades gubernamentales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo -->
+        <section class="team" id="equipo">
+            <div class="container">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <div class="team__grid">
+                    <div class="team__member">
+                        <div class="team__member-image"></div>
+                        <h3 class="team__member-name">Dr. Carlos Mendoza</h3>
+                        <p class="team__member-role">Socio Fundador - Derecho Penal</p>
+                        <p class="team__member-description">Con más de 25 años de experiencia, lidera nuestra práctica de derecho penal y ha representado casos de alto perfil en Ecuador.</p>
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image"></div>
+                        <h3 class="team__member-name">Dra. María Sánchez</h3>
+                        <p class="team__member-role">Socia - Derecho Constitucional</p>
+                        <p class="team__member-description">Especialista en derecho constitucional con amplia experiencia en la defensa de derechos fundamentales ante la Corte Constitucional.</p>
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image"></div>
+                        <h3 class="team__member-name">Dr. Javier Morales</h3>
+                        <p class="team__member-role">Socio - Derecho Laboral</p>
+                        <p class="team__member-description">Experto en derecho laboral y seguridad social, con enfoque en la resolución de conflictos colectivos y asesoría empresarial.</p>
+                    </div>
+                </div>
+                <div class="team__cta">
+                    <a href="#equipo-completo" class="button button--secondary">Conocer a todo el equipo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <div class="testimonials__slider">
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <p class="testimonial__text">"El equipo de Ficticio Abogados demostró un profesionalismo excepcional en la resolución de nuestro caso comercial. Su conocimiento y dedicación fueron fundamentales para alcanzar un resultado favorable."</p>
+                            <div class="testimonial__author">
+                                <h4 class="testimonial__name">Empresa Comercial S.A.</h4>
+                                <p class="testimonial__position">Cliente Corporativo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <p class="testimonial__text">"Gracias a la asesoría de Ficticio Abogados, pudimos resolver un complejo litigio laboral de manera eficiente y justa para todas las partes. Su enfoque estratégico y conocimiento legal son incomparables."</p>
+                            <div class="testimonial__author">
+                                <h4 class="testimonial__name">Industrias del Ecuador</h4>
+                                <p class="testimonial__position">Cliente Corporativo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__controls">
+                    <button class="testimonials__control testimonials__control--prev" aria-label="Testimonio anterior"></button>
+                    <button class="testimonials__control testimonials__control--next" aria-label="Testimonio siguiente"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="blog" id="blog">
+            <div class="container">
+                <h2 class="section-title">Últimas Publicaciones</h2>
+                <div class="blog__grid">
+                    <article class="blog__post">
+                        <div class="blog__image"></div>
+                        <div class="blog__content">
+                            <h3 class="blog__title">Reformas al Código Laboral: Lo que debe saber</h3>
+                            <p class="blog__date">15 de marzo, 2025</p>
+                            <p class="blog__excerpt">Análisis de las recientes reformas al Código Laboral ecuatoriano y sus implicaciones para empleadores y trabajadores.</p>
+                            <a href="#" class="blog__link">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="blog__post">
+                        <div class="blog__image"></div>
+                        <div class="blog__content">
+                            <h3 class="blog__title">Protección de datos personales en Ecuador</h3>
+                            <p class="blog__date">2 de marzo, 2025</p>
+                            <p class="blog__excerpt">Guía completa sobre la nueva ley de protección de datos personales y su impacto en empresas y ciudadanos.</p>
+                            <a href="#" class="blog__link">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog__cta">
+                    <a href="#blog-completo" class="button button--secondary">Ver todas las publicaciones</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact" id="contacto">
+            <div class="container">
+                <h2 class="section-title">Contáctenos</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <h3 class="contact__subtitle">Dirección</h3>
+                            <p class="contact__text">Av. Amazonas N36-55 y Naciones Unidas<br>Edificio Puerta del Sol, Piso 8<br>Quito, Ecuador</p>
+                        </div>
+                        <div class="contact__item">
+                            <h3 class="contact__subtitle">Teléfonos</h3>
+                            <p class="contact__text">+593 2 299 8800<br>+593 9 9876 5432</p>
+                        </div>
+                        <div class="contact__item">
+                            <h3 class="contact__subtitle">Email</h3>
+                            <p class="contact__text">info@ficticioabogados.com</p>
+                        </div>
+                        <div class="contact__item">
+                            <h3 class="contact__subtitle">Horario de Atención</h3>
+                            <p class="contact__text">Lunes a Viernes: 8:30 - 17:30<br>Sábados: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <div class="contact__form-group">
+                            <label for="name" class="contact__label">Nombre completo</label>
+                            <input type="text" id="name" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="email" class="contact__label">Correo electrónico</label>
+                            <input type="email" id="email" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="phone" class="contact__label">Teléfono</label>
+                            <input type="tel" id="phone" class="contact__input">
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="subject" class="contact__label">Asunto</label>
+                            <select id="subject" class="contact__select">
+                                <option value="">Seleccione un área legal</option>
+                                <option value="penal">Derecho Penal</option>
+                                <option value="constitucional">Derecho Constitucional</option>
+                                <option value="laboral">Derecho Laboral</option>
+                                <option value="civil">Derecho Civil</option>
+                                <option value="mercantil">Derecho Mercantil</option>
+                                <option value="administrativo">Derecho Administrativo</option>
+                            </select>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="message" class="contact__label">Mensaje</label>
+                            <textarea id="message" class="contact__textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="contact__submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__logo">Ficticio Abogados</h3>
+                    <p class="footer__description">Firma legal comprometida con la excelencia y la defensa de sus derechos.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">TW</a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">LI</a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Enlaces Rápidos</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="#inicio" class="footer__link">Inicio</a></li>
+                        <li class="footer__link-item"><a href="#sobre-nosotros" class="footer__link">Sobre Nosotros</a></li>
+                        <li class="footer__link-item"><a href="#especialidades" class="footer__link">Especialidades</a></li>
+                        <li class="footer__link-item"><a href="#equipo" class="footer__link">Equipo</a></li>
+                        <li class="footer__link-item"><a href="#blog" class="footer__link">Blog</a></li>
+                        <li class="footer__link-item"><a href="#contacto" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Especialidades</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="#penal" class="footer__link">Derecho Penal</a></li>
+                        <li class="footer__link-item"><a href="#constitucional" class="footer__link">Derecho Constitucional</a></li>
+                        <li class="footer__link-item"><a href="#laboral" class="footer__link">Derecho Laboral</a></li>
+                        <li class="footer__link-item"><a href="#civil" class="footer__link">Derecho Civil</a></li>
+                        <li class="footer__link-item"><a href="#mercantil" class="footer__link">Derecho Mercantil</a></li>
+                        <li class="footer__link-item"><a href="#administrativo" class="footer__link">Derecho Administrativo</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Contacto</h4>
+                    <address class="footer__address">
+                        <p class="footer__contact-item">Av. Amazonas N36-55 y Naciones Unidas<br>Edificio Puerta del Sol, Piso 8<br>Quito, Ecuador</p>
+                        <p class="footer__contact-item">+593 2 299 8800</p>
+                        <p class="footer__contact-item">info@ficticioabogados.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Ficticio Abogados. Todos los derechos reservados.</p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Términos y Condiciones</a>
+                    <a href="#" class="footer__legal-link">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
