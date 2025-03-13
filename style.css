@@ -16,7 +16,7 @@
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+    --spacing-xl: 4.5rem;
 }
 
 * {
@@ -227,15 +227,24 @@ ul {
     position: relative;
 }
 
+.header__nav-item--has-dropdown::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+}
+
 .header__dropdown {
     background-color: #081c4d;
     padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
     border-radius: 4px;
     display: none;
 }
 
-.header__nav-item--has-dropdown.active .header__dropdown {
+.header__nav-item--has-dropdown:hover .header__dropdown {
     display: block;
 }
 
@@ -258,7 +267,7 @@ ul {
 .hero {
     height: 100vh;
     min-height: 500px;
-    background-image: url('https://source.unsplash.com/random/1200x800/?courthouse');
+    background-image: url('https://zezenta.shop/placeholders/SHARE/Ficticio-Abogados/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -284,6 +293,35 @@ ul {
     z-index: 1;
     max-width: 800px;
     padding: 0 var(--spacing-md);
+}
+
+/* Hero Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.8s ease forwards;
+}
+
+.hero__title.animate-slide-up {
+    animation-delay: 0.2s;
+}
+
+.hero__subtitle.animate-slide-up {
+    animation-delay: 0.4s;
+}
+
+.hero__cta.animate-slide-up {
+    animation-delay: 0.6s;
 }
 
 .hero__title {
@@ -318,7 +356,7 @@ ul {
 
 /* About Section */
 .about {
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 0.5) 0 var(--spacing-xl);
     background-color: var(--color-background);
 }
 
@@ -370,7 +408,7 @@ ul {
 
 /* Specialties Section */
 .specialties {
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 0.5) 0 var(--spacing-xl);
     background-color: var(--color-background-alt);
 }
 
@@ -413,7 +451,7 @@ ul {
 
 /* Team Section */
 .team {
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 0.5) 0 var(--spacing-xl);
     background-color: var(--color-background);
 }
 
@@ -439,17 +477,17 @@ ul {
 .team__member-image {
     height: 250px;
     background-color: #ddd;
-    background-image: url('https://source.unsplash.com/random/400x400/?lawyer');
+    background-image: url('https://zezenta.shop/placeholders/SHARE/Ficticio-Abogados/lawyerm1.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .team__member:nth-child(2) .team__member-image {
-    background-image: url('https://source.unsplash.com/random/400x400/?woman,lawyer');
+    background-image: url('https://zezenta.shop/placeholders/SHARE/Ficticio-Abogados/lawyerf2.jpg');
 }
 
 .team__member:nth-child(3) .team__member-image {
-    background-image: url('https://source.unsplash.com/random/400x400/?man,lawyer');
+    background-image: url('https://zezenta.shop/placeholders/SHARE/Ficticio-Abogados/lawyerm3.jpg');
 }
 
 .team__member-name {
@@ -478,7 +516,7 @@ ul {
 
 /* Testimonials Section */
 .testimonials {
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 0.5) 0 var(--spacing-xl);
     background-color: var(--color-primary);
     color: white;
 }
@@ -578,7 +616,7 @@ ul {
 
 /* Blog Section */
 .blog {
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 0.5) 0 var(--spacing-xl);
     background-color: var(--color-background);
 }
 
@@ -604,13 +642,13 @@ ul {
 .blog__image {
     height: 200px;
     background-color: #ddd;
-    background-image: url('https://source.unsplash.com/random/800x400/?law');
+    background-image: url('https://zezenta.shop/placeholders/SHARE/Ficticio-Abogados/codigolaboral.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .blog__post:nth-child(2) .blog__image {
-    background-image: url('https://source.unsplash.com/random/800x400/?data,privacy');
+    background-image: url('https://zezenta.shop/placeholders/SHARE/Ficticio-Abogados/privacidad.jpg');
 }
 
 .blog__content {
@@ -653,14 +691,14 @@ ul {
 
 /* Contact Section */
 .contact {
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 0.5) 0 var(--spacing-xl);
     background-color: var(--color-background-alt);
 }
 
 .contact__content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
 }
 
 .contact__info {
@@ -674,18 +712,23 @@ ul {
     padding: var(--spacing-md);
     border-radius: 8px;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .contact__subtitle {
     font-family: var(--font-secondary);
     color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
 }
 
 .contact__text {
     color: var(--color-text-light);
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin: 0;
 }
 
 .contact__form {
@@ -696,7 +739,7 @@ ul {
 }
 
 .contact__form-group {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: calc(var(--spacing-sm) * 0.4);
 }
 
 .contact__label {
@@ -710,7 +753,7 @@ ul {
 .contact__select,
 .contact__textarea {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
     border: 1px solid var(--color-border);
     border-radius: 4px;
     font-family: var(--font-primary);
@@ -718,12 +761,10 @@ ul {
     transition: var(--transition);
 }
 
-.contact__input:focus,
-.contact__select:focus,
-.contact__textarea:focus {
-    outline: none;
-    border-color: var(--color-secondary);
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+.contact__textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 150px;
 }
 
 .contact__submit {
@@ -826,37 +867,6 @@ ul {
     opacity: 0.8;
 }
 
-.footer__bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: var(--spacing-md) 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-    text-align: center;
-}
-
-.footer__copyright {
-    opacity: 0.8;
-    font-size: 0.9rem;
-}
-
-.footer__legal {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-md);
-}
-
-.footer__legal-link {
-    opacity: 0.8;
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.footer__legal-link:hover {
-    opacity: 1;
-    color: var(--color-secondary);
-}
-
 /* Media Queries */
 @media (min-width: 768px) {
     .header__menu-toggle {
@@ -883,15 +893,23 @@ ul {
 
     .header__dropdown {
         position: absolute;
-        top: 100%;
+        top: calc(100% + 0.5rem);
         left: 0;
         min-width: 200px;
-        margin-top: 0.5rem;
+        margin-top: 0;
         z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+        display: block;
+        background-color: #081c4d;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
     }
 
     .header__nav-item--has-dropdown:hover .header__dropdown {
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
 
     .hero__title {
@@ -919,26 +937,30 @@ ul {
     }
 
     .contact__content {
-        flex-direction: row;
+        flex-direction: column;
+        gap: var(--spacing-md);
     }
 
     .contact__info {
-        flex: 1;
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-md);
+        align-items: stretch;
     }
 
     .contact__form {
-        flex: 1;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .contact__form-group {
+        margin-bottom: calc(var(--spacing-sm) * 0.4);
     }
 
     .footer__content {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .footer__bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
     }
 }
 
